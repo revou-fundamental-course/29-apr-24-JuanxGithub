@@ -16,6 +16,7 @@ body {
     background-color: white;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
 }
 
 .navigation-icon {
@@ -33,6 +34,7 @@ body {
     font-size: 14px;
     line-height: 19.6px;
     text-align: center;
+    font-weight: bold;
     height: 40px;
     background-color: transparent;
     border: 1px solid black;
@@ -40,7 +42,7 @@ body {
     padding: 0 20px;
     cursor: pointer;
     margin: 0 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.6s, color 0.3s;
     border-width: 2px;
     /* margin-left: 10px; */
 }
@@ -60,7 +62,7 @@ body {
 }
 
 .content-container > header {
-    padding: 90px 0px 100px 0px;
+    padding: 0px 0px 20px 0px;
     text-align: center;
     color: black;
     font-size: 30px;
@@ -68,7 +70,6 @@ body {
     box-sizing: border-box;
     
 }
-
 
 .content-container header h1{
     font-family: "Open Sans", serif;
@@ -103,22 +104,27 @@ body {
 .header-columns {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 1px;
+    
 }
 
 .header-column {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .header-column h3 {
-    font-size: 1.5em;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
 .header-column p {
-    font-size: 1em;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
 }
-
 
 .header-with-image {
     background-position: center;
@@ -139,7 +145,7 @@ body {
 .image-container img {
     display: inline;
     max-width: 100%;
-    height: 600px;
+    height: auto;
     width: 1519.2px;
     box-sizing: border-box;
     
@@ -159,23 +165,20 @@ body {
 
 .centered p {
     margin: 0;
-    font-size: 16px; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust the line height as needed */
+    font-size: 16px; 
+    line-height: 1.5; 
 }
-
 
 /* Core content styles */
 .core-content {
-    
     display: flex;
     flex-direction:row; 
     justify-content: center; 
     align-items: center; 
-    width: 100%;
-    height: auto; 
     /* margin-top: 0px;  */
     margin-right: auto; 
-    margin-left: auto; 
+    margin-left: auto;
+    padding: 20px 40px 80px;
 }
 
 .core-item {
@@ -197,14 +200,14 @@ body {
 .core-item.item-right {
     background-color: rgb(161, 121, 11);
     max-width: 400px; 
-    margin: 100px 5% 20px calc(5% + 40px);
+    margin: 0px 5% 200px calc(5% + 4px);
     display: inline;
     text-align: center;
     line-height: 22.4px;
     height: auto;
     width: auto;
     cursor: default;
-    padding: 10px 10px 10px 10;
+    padding: 10px 5px 5px 10px;
 }
 
 .core-item.item-right h2 {
@@ -260,6 +263,7 @@ body {
 }
 
 .item-form label {
+    color: white;
     display: block;
     font-weight: bold;
     font-size: 12px;
@@ -280,18 +284,31 @@ body {
     font-size: 14px;
 }
 
-input[type="email"] {
+input[type="email"],
+.item-form select {
     width: calc(100% - 22px);
-    padding: 12px 10px; 
+    padding: 12px 10px;
+    margin-bottom: 10px; 
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+.item-form input[type="interest"],
+.item-form select {
+    width: calc(100% - 22px);
+    padding: 12px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
 button[type="submit"] {
     display: block;
-    justify-content: center;
     padding: 15px 123px;
     margin: 70px 10px 10px 30px;
     background-color: white;
@@ -299,14 +316,12 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: "Open Sans", serif;
+    font-family: sans-serif;
     font-size: 12px;
     font-weight: bold;
-    font-variant: none;
     line-height: 17px;
     text-align: center;
     text-transform: uppercase;
-    word-spacing: 0px;
 }
 
 button:hover {
@@ -316,11 +331,12 @@ button:hover {
 
 
 .core-item.item-left {
-    background-color: antiquewhite;
+    background-color: antiquewhite;         
     display: inline;
     grid-template-columns: 1fr 1fr; 
     grid-column-gap: 20px; 
     align-items: center; 
+    border-radius: 20px;
 }
 
 .core-item.item-left img {
@@ -333,7 +349,7 @@ button:hover {
 .core-item.item-left img:last-child {
     display: block;
     max-width: 40px; 
-    height: px;
+    height: auto;
     width: 36px;
     margin-top: 10px; 
 }
@@ -359,6 +375,7 @@ button:hover {
 
 .user-review img {
     max-width: 100%; 
+    height: auto;
 }
 
 .user-info {
@@ -401,6 +418,7 @@ button:hover {
 
 .offer-info {
     font-size: 16px;
+    font-weight: bold;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -417,6 +435,8 @@ button:hover {
 }
 
 .no-numbers li img {
+    max-width: 100%;
+    height: auto;
     vertical-align: middle;
     margin-right: 10px;
     float: left;
@@ -424,28 +444,28 @@ button:hover {
 }
 
 .no-numbers li p {
-    margin-left: 60px; /* Adjust this value to control the space between the image and the text */
+    margin-left: 60px;
     line-height: 1.5;
 }
 
 
 /* Our package content styles */
 .our-package-content {
-    background-color: antiquewhite;
-    padding: 60px;
+    /* background-color: antiquewhite; */
+    padding: 80px 10px 0px 0px;
     text-align: center;
-    margin-top: 50px; 
-    border-radius: 60px; /* Add rounded corners */
-    margin-bottom: 20px;
+    margin: 0px 100px; 
+    border-radius: 20px; 
     flex-wrap: wrap;
 }
 
 .our-package-content img {
-    width: 450px;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     display: block;
 }
@@ -453,7 +473,6 @@ button:hover {
 .our-package-content > h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 80px;
-    font-variant: none;
     /* line-height: 100px; */
     text-decoration: none solid rgb(0, 0, 0);
     color: #000000;
@@ -461,8 +480,6 @@ button:hover {
     font-weight: bold;
     text-align: center;
     transform: none;
-    transition: all 0s ease 0s;
-    margin-bottom: 20px;
     cursor: default;
 }
 
@@ -527,12 +544,13 @@ button:hover {
 /* Call Us content styles */
 .call-us-content {
     display: flex;
-    padding: 20px;
+    padding: 20px 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin: 20px 20px;
+    border-radius: 20px; 
 }
 
 .call-us-content > h1 {
@@ -546,15 +564,23 @@ button:hover {
     font-weight: bold;
     text-align: center;
     transform: none;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     cursor: default;
+    background-color: rgb(177, 134, 17);
+    border-radius: 30px;
+    padding: 0px 20px 10px ;
 }
 
-.call-us-content > p {
-    font-size: small;
+.call-us-column > h3 {
+    font-weight: bold;
+}
+
+.call-us-column > p {
+    font-size: 80%;
     text-align: center;
     margin-top: auto;
+    color: black;
 }
 
 .call-us-content button {
@@ -562,16 +588,16 @@ button:hover {
     background-color: white;
     color: black;
     border: 2px solid;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 12px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .call-us-content button:hover {
-    background-color: antiquewhite;
-    color: black; 
+    background-color: rgb(177, 134, 17);
+    color: white; 
 }
 
 .call-us-content::after {
@@ -585,19 +611,19 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    background-color: antiquewhite; /* Adjust the alpha value (last parameter) for the desired transparency */
-    margin-bottom: 20px; /* Add some space between the columns */
-    border-radius: 10px; 
+    margin: 0px 0px; 
+    border-radius: 40px; 
 }
 
 .call-us-column {
+    font-family: sans-serif;
     width: 25%; 
     float: left; 
     padding: 20px; 
     box-sizing: border-box; 
-    background-color: rgb(177, 134, 17);
+    background-color: antiquewhite;
     padding: 20px;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 10px;
     border-radius: 20px;
 }
 /* Footer */
@@ -636,3 +662,4 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: underline;
 }
+

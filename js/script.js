@@ -1,9 +1,16 @@
+function validation(){
+    console.log('good');
+
+}
+
+document.getElementById('send-btn').addEventListener('click', () => validation())
+
+
 document.getElementById('home-btn').addEventListener('click', function() {
     document.querySelector('.image-container').scrollIntoView({
         behavior: 'smooth'
     });
 });
-
 
 document.getElementById('package-btn').addEventListener('click', function() {
     document.querySelector('.our-package-content').scrollIntoView({
@@ -12,6 +19,12 @@ document.getElementById('package-btn').addEventListener('click', function() {
 });
 
 document.getElementById('contact-btn').addEventListener('click', function() {
+    document.querySelector('.core-item.item-left').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('call-btn').addEventListener('click', function() {
     document.querySelector('.core-item.item-left').scrollIntoView({
         behavior: 'smooth'
     });

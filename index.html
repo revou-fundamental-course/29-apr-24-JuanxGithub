@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<!-- Navbar -->
 <body>
     <header class="navigation-container">
         <div class="navigation-icon" style="background-image: url('assets/travel.jpg');">
@@ -19,6 +20,7 @@
         </nav>
     </header>
 
+    <!-- content -->
     <article class="content-container">
         <header class="header-with-image">
             <div class="image-container">
@@ -31,15 +33,15 @@
             <div class="header-columns">
                 <div class="header-column">
                     <h3>Tours & Experiences</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Transform your travels into extraordinary adventures <br>with our exceptional tours & experiences.</p>
                 </div>
                 <div class="header-column">
                     <h3>Tailor-made trips</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Your journey, your way - explore the world <br>with our tailor-made trips.</p>
                 </div>
                 <div class="header-column">
                     <h3>Our Travel Agency</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Where every journey begins - welcome to our travel agency.</p>
                 </div>
                 </div>
             </header>
@@ -49,11 +51,11 @@
                 <div class="user-content">
                     <div class="user-review">
                         <img src="assets/image.jpg" alt="image">
-                        <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                        <p>"Vacations become fun with a Saturn Travel Agent."</p>
                     </div>
                     <div class="user-info">
                         <img src="assets/user.png" alt="user">
-                        <p><span>Florence Hughes</span><br>Ibu Rumah Tangga, 28</p>
+                        <p><span>Florence Hughes</span><br>Housewife, 28</p>
                     </div>
                 </div>
 
@@ -79,16 +81,18 @@
                 
                 <form onsubmit="return validateForm()">
                     <section class="item-form">
-                        <label for="name">Your Name:</label><input type="text" id="name" placeholder="first and last name" required />
-                        <label for="email">Email:</label><input type="email" id="email" placeholder="example@email.com" required />
-                        <label for="interest">What are you interested in?</label>
-                        <select id="interest" required>
-                            <option value="" disabled selected>Select Option</option>
-                            <option value="product">Japan</option>
-                            <option value="service">Malaysia</option>
-                            <option value="general">Singapore</option>
+                        <div>
+                            <label for="name">Your Name:</label><input type="text" id="name" placeholder="first and last name" required />
+                            <label for="email">Email:</label><input type="email" id="email" placeholder="example@email.com" required />
+                            <label for="interest">What are you interested in?</label>
+                            <select id="interest" required>
+                                <option value="" disabled selected>Select Option</option>
+                                <option value="product">Japan</option>
+                                <option value="service">Malaysia</option>
+                                <option value="general">Singapore</option>
+                    </div>
                         </select>
-                        <button type="submit">SEND</button>
+                        <button type="submit" id="send-btn">SEND</button>
                     </section>
                 </form>
             </div>
@@ -138,46 +142,45 @@
             </ul>
         </section>
         
-
         <section class="call-us-content">
             <h1>expert guidance to help you plan your trip</h1>
             <div class="call-us-columns">
                 <div class="call-us-column">
                     <h3>Best Things to Do</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Embark on unforgettable adventures with ou  r curated list of the best things to do, ensuring every moment is filled with excitement and wonder.</p>
                 </div>
                 <div class="call-us-column">
                     <h3>Things to Know</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Prepare for your journey with our essential list of things to know, ensuring a smooth and enjoyable travel experience from start to finish.</p>
                 </div>
                 <div class="call-us-column">
                     <h3>Transportation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Travel effortlessly and comfortably with our reliable transportation services, ensuring you arrive at your destination safely and on time</p>
                 </div>
                 <div class="call-us-column">
                     <h3>Visa Requirements</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Navigate the complexities of visa requirements with ease, ensuring a smooth and hassle-free travel experience</p>
                 </div>
                 <div class="call-us-column">
                     <h3>Money and Costs</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Plan your budget wisely and make the most of your travels with our money-saving tips and cost breakdowns</p>
                 </div>
                 <div class="call-us-column">
                     <h3>Best Road Trips</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Hit the road and discover breathtaking landscapes and hidden gems with our curated list of the best road trips.</p>
                 </div>
                 </div>
-            <button>CALL TO ACTION</button>
-            <hr />
+            <button id="call-btn">CONTACT US</button>
         </section>
 
+        <!-- footer -->
         <footer>
             <img src="assets/travel.jpg" alt="Travel Agent Logo">
             <ul>
                 <li><a href="terms.html">Terms of Service</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
             </ul>
-            <p>©2024 Agent</p>
+            <p>©2024 Saturn Travel Agent</p>
         </footer>
     </article>
 
