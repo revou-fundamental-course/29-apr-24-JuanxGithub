@@ -1,3 +1,6 @@
+// Consolidate slideIndex declaration
+var slideIndex = 0;
+
 document.getElementById('home-btn').addEventListener('click', function() {
     document.querySelector('.image-container').scrollIntoView({
         behavior: 'smooth'
@@ -43,31 +46,17 @@ function validateForm() {
     return true; 
 }
 
-var slideIndex = 1;
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-var slideIndex = 0;
-
 function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
     for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
+        slides[i].style.display = "none";
+    }
     slideIndex++;
     if (slideIndex > slides.length) {
-    slideIndex = 1;
-}
+        slideIndex = 1;
+    }
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 4000);
 }
 
 showSlides(); 
-
-
