@@ -1,8 +1,10 @@
+@media only screen and (min-width: 601px) {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .container {
@@ -20,6 +22,7 @@ header {
 .navigation {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .navigation a {
@@ -46,6 +49,7 @@ header {
 }
 
 .navigation-icon {
+    display: block;
     margin: 0px 50px    ;
     background-image: url("assets/travel.jpg");
     background-color: #cccccc;
@@ -217,6 +221,7 @@ header {
     border-radius: 8px;
 }
 
+/* .core-item.item-right */
 .core-item.item-right {
     max-width: 400px; 
     margin: 0px 5% 350px calc(5% + 4px);
@@ -226,7 +231,7 @@ header {
     height: auto;
     width: auto;
     cursor: default;
-    padding: 10px 5px 5px 10px;
+    padding: 30px;
 }
 
 .core-item.item-right h2 {
@@ -312,7 +317,10 @@ button:hover {
     color: black; 
 }
 
+/* .core-item.item-left  */
+
 .core-item.item-left {
+    padding: 30px;
     border: 3px solid sienna;        
     display: inline;
     border-radius: 20px;
@@ -659,7 +667,7 @@ button:hover {
 /* Footer */
     footer {
         border-top: 2px solid sienna;
-        padding: 20px 0;
+        padding: 20px;
         text-align: center;
     }
 
@@ -691,4 +699,6 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
 }
